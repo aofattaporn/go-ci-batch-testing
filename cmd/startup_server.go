@@ -7,10 +7,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func init() {
-	rootCmd.AddCommand(startUpCmd)
-}
-
 // command startUpCmd usage
 var startUpCmd = &cobra.Command{
 	Use:   "startup",
@@ -28,4 +24,8 @@ var startUpCmd = &cobra.Command{
 
 		return nil
 	},
+}
+
+func init() {
+	rootCmd.AddCommand(startUpCmd)
 }
