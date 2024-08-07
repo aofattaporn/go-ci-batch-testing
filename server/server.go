@@ -25,4 +25,5 @@ func NewFiberServer(cfg configs.IConfig) (IServer, error) {
 
 func (s *fiberServer) Start() {
 
+	s.Start()
 }
